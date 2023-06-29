@@ -122,6 +122,10 @@ header.shadow {
 .home-img img {
     width: 100%;
 }
+img {
+    overflow-clip-margin: content-box;
+    overflow: clip;
+}
 .home-text span {
     font-size: var(--medium-font);
     font-weight: 500;
