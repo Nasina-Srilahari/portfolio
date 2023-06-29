@@ -24,24 +24,4 @@ darkmode.onclick = () => {
  
 
 
-const sliderImg = document.getElementById("sliderImg");
-const prevBtn = document.getElementById("prevBtn");
-const nextBtn = document.getElementById("nextBtn");
-const images = ["image1.jpg", "image2.jpg", "image3.jpg"];
-let currentIndex = 0;
-
-function changeImage(index) {
-  sliderImg.src = images[index];
-}
-
-prevBtn.addEventListener("click", function() {
-  currentIndex = (currentIndex - 1 + images.length) % images.length;
-  changeImage(currentIndex);
-});
-
-nextBtn.addEventListener("click", function() {
-  currentIndex = (currentIndex + 1) % images.length;
-  changeImage(currentIndex);
-});
-
 
