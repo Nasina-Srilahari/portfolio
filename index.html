@@ -1,0 +1,317 @@
+ 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Srilahari Nasina – Personal Portfolio Website </title><link rel="preload" as="image" imagesrcset="https://blog.thesimplifieddev.com/wp-content/uploads/2023/01/Portfolio-1-1024x510.jpg 1024w, https://blog.thesimplifieddev.com/wp-content/uploads/2023/01/Portfolio-1-1200x598.jpg 1200w, https://blog.thesimplifieddev.com/wp-content/uploads/2023/01/Portfolio-1.jpg 1324w" imagesizes="(max-width: 860px) 100vw, 860px" /><link rel="preload" as="font" href="https://blog.thesimplifieddev.com/wp-content/themes/smart-mag/css/icons/fonts/ts-icons.woff2?v2.4" type="font/woff2" crossorigin="anonymous" />
+    <link rel="stylesheet" href="styles.css">
+    <link data-minify="1" rel="stylesheet" href="https://blog.thesimplifieddev.com/wp-content/cache/min/1/npm/boxicons@latest/css/boxicons.min.css?ver=1680857252">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+          const words = ["Full Stack Developer","Frontend Developer", "PHP Developer", "Python Developer"];
+          let wordIndex = 0;
+          let charIndex = 0;
+          let typingTimeout;
+          const typingElement = document.querySelector('.typing-animation');
+    
+          function type() {
+            if (charIndex < words[wordIndex].length) {
+              typingElement.textContent += words[wordIndex].charAt(charIndex);
+              charIndex++;
+              typingTimeout = setTimeout(type, 100);
+            } else {
+              setTimeout(erase, 2000);
+            }
+          }
+    
+          function erase() {
+            if (charIndex > 0) {
+              typingElement.textContent = words[wordIndex].substring(0, charIndex - 1);
+              charIndex--;
+              typingTimeout = setTimeout(erase, 50);
+            } else {
+              wordIndex = (wordIndex + 1) % words.length;
+              setTimeout(type, 500);
+            }
+          }
+    
+          type();
+        });
+      </script>
+
+
+</head>
+<body>
+    <!-- Navbar  Section Start -->
+    <header style="background-color: #5abebf">
+        <a href="#" class="logo" href="#">Port<span>folio</span></a>
+        <div class="bx bx-menu" id="menu-icon"></div>
+        <ul class="navbar">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#cerifications">Certifications</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <div class="bx bx-moon" id="darkmode"></div>
+        </ul>
+    </header>
+    <!-- Navbar Section End -->
+
+
+    <!-- Home Section Start -->
+    <section class="home" id="home">
+        <div class="home-img">
+            <div class="image-container">
+                <img src="home-image.png" alt="" title="Srilahari">
+            </div>
+        </div>
+        <div class="social">
+            <a href="https://github.com/Nasina-Srilahari" targe="_blank"><i class="bx bxl-github"></i></a>
+            <a href="https://www.linkedin.com/in/nasina-srilahari-b0792222a" target="_blank"><i class="bx bxl-linkedin"></i></a>
+            <a href="#" target="_blank"><i class="bx bxl-discord-alt"></i></a>
+        </div>
+            <div class="home-text">
+                <span>Hello<span class="wave">👋</span>, I’m</span><br><br>
+                <h1>Srilahari Nasina</h1>
+                <h2>A  <span class="typing-animation"></span></h2>
+                <p>I am an enthusiastic Leaner.Constantly expanding my knowledge and staying up-to-date with the latest trends.Let's connect and collaborate on exciting projects! &#128519;</p>
+                <a href="https://drive.google.com/uc?export=download&id=1SisK4bADh8oGiPRARjM-nmmtNReQ02lE" class="btn" download>Download CV</a>
+
+            </div>
+    </section>
+    <!-- Home Section End -->
+
+
+    <!-- About Section Start -->
+    <section class="about" id="about">
+        <div class="heading">
+            <h2>About Me</h2><br>
+            <span>Introduction</span>
+        </div>
+        <div class="about-container" >
+            <div class="about-image">
+                <div class="image-container">
+                    <img src="about1.png" style="max-width:350px; max-height: 350px;" >
+                </div>
+            </div>
+            <div class="about-text">
+                <p style="font-family: sans-serif">My name is <b>Srilahari Nasina</b> Currently pursuing my graduation 🎓 in B.Tech CSE from JNTUA College of Engineering Pulivendula.I am an entusiastic Learner.Iam very passionate in the fields of Full Stack Web Development,Python Development,PHP.Currently Looking for the Interships in the mentioned fields.</p>
+                <div class="information">
+                    <div class="info-box">
+                        <i class='bx bxs-briefcase'></i>
+                            <span><a href="https://superlabs.co/" style="color:blue">Currenty working as Software Engineer Intern at Superlabs<i class='bx bx-link-external'></i></a></span>
+                    </div>
+                    <div class="info-box">
+                        <i class='bx bx-mobile'></i>
+                            <span><a href="tel:+917396061139">+91 7396061139</a></span>
+                    </div>
+                    <div class="info-box">
+                        <i class='bx bxl-gmail'></i>
+                            <span><a href="mailto:srilahari.nasina@gmail.com">srilahari.nasina@gmail.com</a></span>
+                    </div>
+                </div>
+                <a href="https://drive.google.com/uc?export=download&id=1SisK4bADh8oGiPRARjM-nmmtNReQ02lE" class="btn" download>Download CV</a>
+            </div>
+        </div>
+    </section>
+    <!-- About Section End -->
+    <!-- Skills Section Start -->
+    <section class="skills" id="skills">
+        <div class="heading">
+            <h2>Skills</h2><br>
+            <span>My Skills</span>
+        </div>
+    
+        <div class="skills-container">
+            <div class="bars">
+    
+                <div class="bars-box">
+                    <h3>HTML</h3>
+                    <span>94%</span>
+                    <div class="light-bar"></div>
+                    <div class="percent-bar html-bar"></div>
+                </div>
+    
+                <div class="bars-box">
+                    <h3>CSS</h3>
+                    <span>84%</span>
+                    <div class="light-bar"></div>
+                    <div class="percent-bar css-bar"></div>
+                </div>
+    
+                <div class="bars-box">
+                    <h3>JavaScript</h3>
+                    <span>80%</span>
+                    <div class="light-bar"></div>
+                    <div class="percent-bar js-bar"></div>
+                </div>
+                <div class="bars-box">
+                    <h3>React</h3>
+                    <span>80%</span>
+                    <div class="light-bar"></div>
+                    <div class="percent-bar react-bar"></div>
+                </div>
+                <div class="bars-box">
+                    <h3>PHP</h3>
+                    <span>80%</span>
+                    <div class="light-bar"></div>
+                    <div class="percent-bar react-bar"></div>
+                </div>
+            </div>
+            <div class="skills-img">
+                <div class="image-container">
+                    <img src="skills-image.avif" alt="Skill" title="skills image">
+                </div>
+            </div>
+            
+        </div>
+        <a href="https://www.linkedin.com/in/nasina-srilahari-b0792222a" style="text-align: center; align-items: center;" target="_blank">Know More</a>
+    </section>
+    <!-- Skills Section End -->
+    <!-- Certifications Section Start -->
+    <section id="cerifications" id="certifications">
+            <div class="heading">
+                <h2>Cerifications</h2><br>
+                <span>My Cerifications</span>
+            </div>
+            <div class="cerifications-content">
+        
+                <div class="cerifications-box">
+                    <i class='bx bx-code-alt'></i>
+                    <h3>Full-stack Designing</h3>
+                    <a href="https://drive.google.com/file/d/1F-_aY5vF-ozN4z38uWfBeXjDTYDZPxyd/view?usp=sharing">Learn More</a>
+                </div>
+        
+                <div class="cerifications-box">
+                    <i class='bx bxl-python' ></i>
+                    <h3>Python Programming</h3>
+                    <a href="https://drive.google.com/file/d/1izuQT31DOEmCQPl_TkbS7R0eRw56-Vhx/view?usp=sharing">Learn More</a>
+                </div>
+                <div class="cerifications-box">
+                    <i class='bx bxl-java'></i>
+                    <h3>Java Programming</h3>
+                    <a href="https://drive.google.com/file/d/17OwodPoSaRMlUjy_5G45zGkePH_zxOV4/view?usp=sharing">Learn More</a>
+                </div>
+        
+                <div class="cerifications-box">
+                    <i class='bx bxl-android'></i>
+                    <h3>Devops</h3>
+                    <a href="#">Learn More</a>
+                </div>
+            </div>
+    </section>
+    <!-- Certifications Section End -->
+    <section class="projects" id="projects">
+        <div class="heading">
+            <h2>Projects</h2><br>
+            <span >My Projects</span>
+        </div>
+        <div class="cerifications-content">
+            <div class="wrapper">
+                <h2 style="font-size:25px;margin-top: 1px;">Look at here are some of my projects! Let's connect and collaborate for more exciting projects. To see more projects Download My CV</h2>
+                <div class="cols">
+                          <div class="col" ontouchstart="this.classList.toggle('hover');">
+                              <div class="container">
+                                  <div class="front" style="background-image: url(weather.png)">
+                                      <div class="inner">
+                                          <p style="font-size:22px;">Weather App</p>
+                                          <span>You can check the weather of any city.</span>
+                                      </div>
+                                  </div>
+                                  <div class="back">
+                                      <div class="inner">
+                                        <p style="font-size:17px;">This is Full-stack Web Development project which can be used to get the weather of a particular city at any moment.</p>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="col" ontouchstart="this.classList.toggle('hover');">
+                              <div class="container">
+                                  <div class="front" style="background-image:url(save-time.jpg)">
+                                      <div class="inner">
+                                          <p style="font-size:22px;">Bfocalize</p>
+                                            <span>Your Web browsing Time Moniter</span>
+                                      </div>
+                                  </div>
+                                  <div class="back">
+                                      <div class="inner">
+                                          <p style="font-size:17px;">This is a JavaScript project. It is a chrome extension which will track the website time and notify to take break when working continuously.</p>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="col" ontouchstart="this.classList.toggle('hover');">
+                              <div class="container">
+                                  <div class="front" style="background-image: url(healthyweb.jpg)">
+                                      <div class="inner">
+                                          <p style="font-size:22px;">Healthy Web</p>
+                                            <span>Post operative Medical Assistance</span>
+                                      </div>
+                                  </div>
+                                  <div class="back">
+                                      <div class="inner">
+                                          <p style="font-size:17px;">A Web App which can take care or the post care of a patient, notifies to take medicines, track the progress, stores medical records etc</p>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="col" ontouchstart="this.classList.toggle('hover');">
+                              <div class="container">
+                                  <div class="front" style="background-image: url(rebuy.jpeg)">
+                                      <div class="inner">
+                                          <p style="font-size:22px;">Rebuy</p>
+                                            <span>Platform to buy or sell old books</span>
+                                      </div>
+                                  </div>
+                                  <div class="back">
+                                      <div class="inner">
+                                          <p style="font-size:17px;">A react app which acts as an interface between the buyer and seller of old used books. One can also donate books here</p>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+               </div>
+        </div>
+    </section>
+    <!-- Contact Section Start -->
+    <section class="contact" id="contact">
+        <div class="heading">
+            <h2>Contact</h2>
+            <span>Connect With Me</span>
+        </div>
+        <div class="contact-form">
+            <form action="send_mail.php" method="post">
+                <input type="text" placeholder="Your Name">
+                <input type="email" name="" id="" placeholder="Your Email">
+                <textarea name="" id="" cols="30" rows="10" placeholder="Write Message Here..."></textarea>
+                <input type="button" value="Send" class="btn">
+            </form>
+        </div>
+    </section>
+    <!-- Contact Section End -->
+
+    
+    <div class="copyright">
+        <div class="footer">
+            <h2>Follow Me</h2>
+            <div class="footer-social">
+                <a href="#" ><i class='bx bxl-linkedin'style="color: #0A66C2;"></i></a>
+                <a href="#"><i class='bx bxl-github'  style="color: #000000;"></i></a>
+                <a href="#" ><i class='bx bxl-instagram' style="color:#E1306C;"></i></a>
+                <a href="#" ><i class='bx bxl-youtube' style="color: #FF0000;"></i></a>
+
+            </div>    
+        </div>
+        &#169; 2023 SriLahari Nasina Portfolio | All Right Reserved.</p>
+    </div>
+        <!-- Javascript -->
+        <script src="script.js"></script>
+    </body>
+    
+    </html>
