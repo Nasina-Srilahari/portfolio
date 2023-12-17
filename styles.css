@@ -8,7 +8,7 @@
     text-decoration: none;
     scroll-behavior: smooth;
     scroll-padding-top: 2rem;
-    font-family: “Poppins”, sans-serif;
+    font-family: "Source Sans Pro", "Arial", sans-serif;
 }
 :root {
     --main-color: #1fc9b2;
@@ -20,7 +20,7 @@
     --p-font: 0.941rem;
 }
 section {
-    padding: 50px 10%;
+    padding: 30px 2%;
 }
 body.active {
     --text-color: #fff;
@@ -113,7 +113,7 @@ header.shadow {
     display: grid;
     grid-template-columns: 0.2fr 1fr 1fr;
     align-items: center;
-    gap: 1rem;
+    gap: 3rem;
 }
 .home-img {
     order: 3;
@@ -121,6 +121,7 @@ header.shadow {
 }
 .home-img img {
     width: 100%;
+    padding: 20px;
 }
 img {
     overflow-clip-margin: content-box;
@@ -169,6 +170,7 @@ img {
 .btn:hover {
     background: var(--hover);
     transform: scale(1.1);
+    font-weight: 600;
 
 }
 @media (max-width: 600px) {
@@ -186,11 +188,11 @@ img {
 .about-img img {
     width: 80%;
     border-radius: 0.5rem;
+    padding: 20px;
 }
 .about-text p {
     font-size: var(--p-font);
     font-weight: 400;
-    text-align: justify;
 }
 .information {
     margin: 1rem 0 1.4rem;
@@ -215,10 +217,16 @@ img {
     margin-top: 4rem;
 }
 .skills-img img {
-    width: 100%;
+    width: 80%;
     height: 100%;
     padding-left: 10rem;
     object-position: center;
+}
+.bars{
+    width: 90%;
+    height: 100%;
+    padding-left: 3rem;
+    object-position: center;   
 }
 .bars-box {
     position: relative;
@@ -392,7 +400,7 @@ form textarea {
         padding: 18px 4%;
     }
     section {
-        padding: 50px 4%;
+        padding: 30px 4%;
     }
 }
 @media (max-width: 881px) {
@@ -458,12 +466,16 @@ form textarea {
     .about-img {
         display: flex;
         justify-content: center;
+        
+    }
+    .about-img .image-container{
+        padding: 20px;
     }
     .skills-container {
         grid-template-columns: 1fr;
     }
     .skills-img img {
-        padding-left: 0;
+        padding: 10px;
     }
     .skills-img {
         padding-top: 2rem;
